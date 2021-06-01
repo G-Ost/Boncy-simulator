@@ -3,8 +3,7 @@ import image from "./mario2.png";
 // import image from "./block.png";
 import { BoardContext } from "../BoardContext"
 function Ball(props) {
-    const board = useContext(BoardContext).board;
-    const squareSize = useContext(BoardContext).squareSize;
+    const { board, squareSize } = useContext(BoardContext);
     const ballElement = useRef(null);
 
     let translationVector = [1, 1];
